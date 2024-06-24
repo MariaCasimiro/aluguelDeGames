@@ -19,16 +19,10 @@ function botao1() {
 
 function temCeteza(id){
     if (id.textContent === "Devolver"){
-        let devolvo = prompt("Tem certeza que quer devolver esse jogo?");
-        let devolver = devolvo.toLocaleUpperCase();
-            if (devolver !==  "SIM"){
-                alert("Ok, escolha outro jogo!");
-            } else {
-                alternar(id);   
-                devoluções = devoluções + 1;
-                console.log(`Devoluções = ${devoluções}`); 
-            }
-    } else if (id.textContent === "Alugar"){
+        alternar(id);   
+        devoluções = devoluções + 1;
+        console.log(`Devoluções = ${devoluções}`); 
+    } else if (id.textContent === "Alugar") {
         let certeza = prompt("Você tem certeza que quer alugar este jogo?");
         let certezaCaps = certeza.toLocaleUpperCase();
             if (certezaCaps !==  "SIM"){
